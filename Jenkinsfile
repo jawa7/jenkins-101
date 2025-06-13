@@ -4,7 +4,7 @@ pipeline {
             label 'jenkins-agent-goes-here'
             }
       }
-    trigers {
+    triggers {
         pollSCM '*/5 * * * *'
     }
     stages {
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing test stuff..
+                echo "doing test stuff.."
                 '''
             }
         }
